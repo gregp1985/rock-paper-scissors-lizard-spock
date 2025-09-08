@@ -1,3 +1,20 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Libertinus+Keyboard&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Permanent+Marker&display=swap');
 
+body {
+    font-family: "Happy Monkey", sans-serif;
+    color: darkblue;
+}
+h1 {
+    font-family: "Permanent Marker", sans-serif;
+    text-transform: uppercase;
+}
+header {
+    display: flex;
+}
+header img {
+    width: 200px;
+}
+header #heading {
+    text-align: center;
+}
