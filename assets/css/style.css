@@ -9,11 +9,18 @@ h1 {
     font-family: "Permanent Marker", sans-serif;
     text-transform: uppercase;
 }
+h2 {
+    font-weight: 500;
+}
 header {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 header img {
     width: 200px;
+
 }
 header #heading {
     text-align: center;
@@ -28,7 +35,37 @@ button {
     font-weight: bold;
     font-size: large;
     border: 0;
+    margin: 20px;
 }
 button:hover {
     border: solid 4px lightblue;
 }
+
+/* Styling for ID's */
+#heading {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#game-options {
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+#game-options div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+
+
+
+}
+/* Styling for Classes */
+@media (max-width: 900px) {
+.hidden {
+    display: none;
+}
+}
+/* Media queries */
