@@ -65,14 +65,54 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-evenly;
-
-
-
+}
+#game-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+#player-choice {
+    max-width: 45%;
+}
+#player-choice img {
+    max-width: 100%;
+}
+#player-choice h4 {
+    text-align: center;
+}
+#computer-choice {
+    max-width: 45%;
+}
+#computer-choice img {
+    max-width: 100%;
+}
+#computer-choice h4 {
+    text-align: center;
+}
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 /* Styling for Classes */
-@media (max-width: 1050px) {
+.control img {
+    width: 100px;
+}
+
+/* Media queries */
+@media (max-width: 805px) {
+    header img {
+        display: none;
+    }
+    #heading h1 {
+        font-size: 150%;
+    }
+}
+@media (max-width: 1400px) {
 header .not-displayed {
     display: none;
 }
 }
-/* Media queries */
+
