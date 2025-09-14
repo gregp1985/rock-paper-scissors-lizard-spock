@@ -1,8 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function() {
-// console.log(document.getElementById("game-heading").innerText);
-// var gameHead = document.getElementById("game-heading").innerText;
-// console.log(gameHead)
-
 let buttons = document.getElementsByTagName("button");
 for (let button of buttons){
     button.addEventListener("click", function() {
@@ -15,8 +10,6 @@ for (let button of buttons){
         }
     })
 }
-
-// })
 let choices = document.getElementsByClassName("control");
 for (let choice of choices){
     choice.addEventListener("click", function() {
