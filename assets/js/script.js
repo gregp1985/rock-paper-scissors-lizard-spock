@@ -21,9 +21,7 @@ for (let choice of choices){
     choice.addEventListener("click", function() {
         let game = choice.getAttribute("data-type");
         updatePlayerImage(game);
-        // updateCompImage()
-        setTimeout(runGame, 200, game)
-    
+        setTimeout(runGame, 50, game)
     })
 }
 function runGame(game) {
@@ -37,26 +35,26 @@ function runGame(game) {
         if (compPlayed === "rock") {
             compImage.src = "assets/photos/rock.png";
             compImage.alt = "Image of rock hand symbol";
-            setTimeout(alertMsg, 200, "It's a Draw! Nobody Wins!");
+            setTimeout(alertMsg, 100, "It's a Draw! Nobody Wins!");
         } else if (compPlayed === "scissors") {
             compImage.src = "assets/photos/scissors.png";
             compImage.alt="Image of scissors hand symbol";
-            setTimeout(alertMsg, 200, "You won! Rock crushes Scissors! as it always has..");
+            setTimeout(alertMsg, 100, "You won! Rock crushes Scissors! as it always has..");
             playerWin();
         } else if (compPlayed === "lizard") {
             compImage.src = "assets/photos/lizard.png";
             compImage.alt="Image of lizard hand symbol";
-            setTimeout(alertMsg, 200, "You won! Rock crushes Lizard!");
+            setTimeout(alertMsg, 100, "You won! Rock crushes Lizard!");
             playerWin();
         } else if (compPlayed === "paper") {
             compImage.src = "assets/photos/paper.png";
             compImage.alt="Image of paper hand symbol";
-            setTimeout(alertMsg, 200, "You lost! Paper covers Rock!");
+            setTimeout(alertMsg, 100, "You lost! Paper covers Rock!");
             compWin();
         } else if (compPlayed === "spock") {
             compImage.src = "assets/photos/spock.png";
             compImage.alt="Image of spock hand symbol";
-            setTimeout(alertMsg, 200, "You lost! Spock vapourizes Rock!");
+            setTimeout(alertMsg, 100, "You lost! Spock vapourizes Rock!");
             compWin();
         }
     }
@@ -213,14 +211,3 @@ function playerLoseBestOf(loseMsg) {
     alert(loseMsg);
     location.reload();
 }
-
-// function incrementScore() {
-//     let oldScore = parseInt(document.getElementById("score").innerText);
-//     document.getElementById("score").innerText = ++oldScore;
-
-// }
-// function incrementWrongAnswer() {
-//     let oldScore = parseInt(document.getElementById("incorrect").innerText);
-//     document.getElementById("incorrect").innerText = ++oldScore;
-
-// }
