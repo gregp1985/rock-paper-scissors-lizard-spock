@@ -92,6 +92,10 @@ hr {
 #computer-choice h4 {
     text-align: center;
 }
+#result-message {
+    text-align: center;
+    font-size: larger;
+}
 #controls {
     display: flex;
     flex-wrap: wrap;
