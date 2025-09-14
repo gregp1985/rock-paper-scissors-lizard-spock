@@ -74,13 +74,17 @@ hr {
     max-width: 1000px;
     margin: auto;
 }
+#game-heading {
+    width: 100%;
+    font-size: 200%;
+}
 #player-choice {
     max-width: 45%;
 }
 #player-choice img {
     max-width: 100%;
 }
-#player-choice h4 {
+#player-choice h3 {
     text-align: center;
 }
 #computer-choice {
@@ -89,7 +93,7 @@ hr {
 #computer-choice img {
     max-width: 100%;
 }
-#computer-choice h4 {
+#computer-choice h3 {
     text-align: center;
 }
 #result-message {
@@ -101,6 +105,9 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-evenly;
+}
+#controls h4 {
+    width: 100%;
 }
 #rules-image {
     display: flex;

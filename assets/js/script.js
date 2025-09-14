@@ -7,7 +7,11 @@ for (let btn of btns){
             window.location.href = "game-best-of-five.html";
         } else if (this.getAttribute("data-type") === "continuous") {
             window.location.href = "game-continuous.html";
-        }
+        } else if (this.getAttribute("data-type") === "rules") {
+            window.location.href = "rules.html";
+        } else if (this.getAttribute("data-type") === "home") {
+            window.location.href = "index.html";
+        } 
     });
 }
 let choices = document.getElementsByClassName("control");
