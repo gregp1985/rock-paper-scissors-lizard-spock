@@ -179,9 +179,9 @@ function playerWin() {
     document.getElementById("wins").innerText = ++oldScore;
     let gameHeading = document.getElementById("game-heading").innerText;
     if (gameHeading === "Best of Three" && oldScore == "2") {
-        setTimeout(playerWinBestOf, 50, "You Won Best of Three!")
+        setTimeout(playerWinBestOf, 200, "You Won Best of Three!")
     } else if (gameHeading === "Best of Five" && oldScore == "3") {
-        setTimeout(playerWinBestOf, 50, "You Won Best of Five!")
+        setTimeout(playerWinBestOf, 200, "You Won Best of Five!")
     }
 }
 function compWin() {
@@ -189,9 +189,9 @@ function compWin() {
     document.getElementById("losses").innerText = ++oldScore;
     let gameHeading = document.getElementById("game-heading").innerText;
     if (gameHeading === "Best of Three" && oldScore == "2") {
-        setTimeout(playerLoseBestOf, 50, "You Lost Best of Three!")
+        setTimeout(playerLoseBestOf, 200, "You Lost Best of Three!")
     } else if (gameHeading === "Best of Five" && oldScore == "3") {
-        setTimeout(playerLoseBestOf, 50, "You Lost Best of Five!")
+        setTimeout(playerLoseBestOf, 200, "You Lost Best of Five!")
     }
 }
 function playerWinBestOf(winMsg) {
