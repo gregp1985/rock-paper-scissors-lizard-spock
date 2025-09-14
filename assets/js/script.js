@@ -1,58 +1,61 @@
-let gameHeading = document.getElementById("game-heading");
-let games = document.getElementsByClassName("game-btn");
-for (let game of games) {
-    game.addEventListener("click", function() {
-        if (this.getAttribute("data-type") === "best-of-three") {
-            gameHeading.innerText = "Best Of Three";
-        } else if (this.getAttribute("data-type") === "best-of-five") {
-            gameHeading.innerText = "Best Of Five";
-        } else if (this.getAttribute("data-type") === "continuous") {
-            gameHeading.innerText = "Continuous Play";
-        }
-    }
-    )
+// let gameHeading = document.getElementById("game-heading");
+// let games = document.getElementsByClassName("game-btn");
+// for (let game of games) {
+//     game.addEventListener("click", function() {
+//         if (this.getAttribute("data-type") === "best-of-three") {
+//             gameHeading.innerText = "Best Of Three";
+//         } else if (this.getAttribute("data-type") === "best-of-five") {
+//             gameHeading.innerText = "Best Of Five";
+//         } else if (this.getAttribute("data-type") === "continuous") {
+//             gameHeading.innerText = "Continuous Play";
+//         }
+//     }
+//     )
   
-} 
-  console.log(gameHeading.innerText)
+// } 
+//   console.log(gameHeading.innerText)
 
-let choices = getElementsByClassName("control");
+let choices = document.getElementsByClassName("control");
 for (let choice of choices){
     choice.addEventListener("click", function() {
         let game = choice.getAttribute("data-type");
-        runGame(game);
+        updatePlayerImage(game);
+        // updateCompImage()
+        setTimeout(runGame, 200, game)
+    
     })
 }
 function runGame(game) {
     let compChoice = choices[Math.floor(Math.random() * 5)];
     let compPlayed = compChoice.getAttribute("data-type");
-    let playerImage = getElementById("player-choice-img");
-    let compImage = getElementById("computer-choice-img");
+    let compImage = document.getElementById("computer-choice-img");
+    
     if (game === "rock") {
-        playerImage.innerHTML.src = "assets/photos/rock.png";
-        playerImage.innerHTML.alt="Image of rock hand symbol";
+        
+
         if (compPlayed === "rock") {
-            compImage.innerHTML.src = "assets/photos/rock.png";
-            compImage.innerHTML.alt = "Image of rock hand symbol";
-            alert("It's a Draw! Nobody Wins!");
+            compImage.src = "assets/photos/rock.png";
+            compImage.alt = "Image of rock hand symbol";
+            setTimeout(alertMsg, 200, "It's a Draw! Nobody Wins!");
         } else if (compPlayed === "scissors") {
-            compImage.innerHTML.src = "assets/photos/scissors.png";
-            compImage.innerHTML.alt="Image of scissors hand symbol";
-            alert("You won! Rock crushes Scissors! as it always has..");
+            compImage.src = "assets/photos/scissors.png";
+            compImage.alt="Image of scissors hand symbol";
+            setTimeout(alertMsg, 200, "You won! Rock crushes Scissors! as it always has..");
             playerWin();
         } else if (compPlayed === "lizard") {
-            compImage.innerHTML.src = "assets/photos/lizard.png";
-            compImage.innerHTML.alt="Image of lizard hand symbol";
-            alert("You won! Rock crushes Lizard!");
+            compImage.src = "assets/photos/lizard.png";
+            compImage.alt="Image of lizard hand symbol";
+            setTimeout(alertMsg, 200, "You won! Rock crushes Lizard!");
             playerWin();
         } else if (compPlayed === "paper") {
-            compImage.innerHTML.src = "assets/photos/paper.png";
-            compImage.innerHTML.alt="Image of paper hand symbol";
-            alert("You lost! Paper covers Rock!");
+            compImage.src = "assets/photos/paper.png";
+            compImage.alt="Image of paper hand symbol";
+            setTimeout(alertMsg, 200, "You lost! Paper covers Rock!");
             compWin();
         } else if (compPlayed === "spock") {
-            compImage.innerHTML.src = "assets/photos/spock.png";
-            compImage.innerHTML.alt="Image of spock hand symbol";
-            alert("You lost! Spock vapourizes Rock!");
+            compImage.src = "assets/photos/spock.png";
+            compImage.alt="Image of spock hand symbol";
+            setTimeout(alertMsg, 200, "You lost! Spock vapourizes Rock!");
             compWin();
         }
     }
@@ -173,9 +176,17 @@ function runGame(game) {
         }
     }
 }
-function playerWin() {
-
+function updatePlayerImage(game) {
+    let playerImage = document.getElementById("player-choice-img");
+    playerImage.src = `assets/photos/${game}.png`;
+    playerImage.alt = `Image of ${game} hand symbol`;
 }
-function compWin() {
+function alertMsg(resultMsg) {
+    alert(resultMsg)
+}
+function playerWin(statement) {
+    // alert(`You Won! ${statement}`)
+}
+function compWin(alert) {
 
 }
