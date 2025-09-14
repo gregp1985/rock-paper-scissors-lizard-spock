@@ -1,20 +1,22 @@
+// document.addEventListener("DOMContentLoaded", function() {
+// console.log(document.getElementById("game-heading").innerText);
+// var gameHead = document.getElementById("game-heading").innerText;
+// console.log(gameHead)
+
 let buttons = document.getElementsByTagName("button");
 for (let button of buttons){
     button.addEventListener("click", function() {
-        let gameHeading = document.getElementById("game-heading");
-        if (this.getAttribute("data-type") === "best-of-three") {
-            gameHeading = "Best Of Three";
-            window.location.href = "game.html"
-        } else if (this.getAttribute("data-type") === "best-of-five") {
-            gameHeading = "Best Of Five";
-            window.location.href = "game.html"
-        } else if (this.getAttribute("data-type") === "continuous") {
-            gameHeading = "Continuous Play";
+        if (button.getAttribute("data-type") === "best-of-three") {
+            window.location.href = "game-best-of-three.html";
+        } else if (button.getAttribute("data-type") === "best-of-five") {
+            window.location.href = "game-best-of-five.html";
+        } else if (button.getAttribute("data-type") === "continuous") {
+            window.location.href = "game-continuous.html";
         }
-    }
-    )
-  
-} 
+    })
+}
+
+// })
 let choices = document.getElementsByClassName("control");
 for (let choice of choices){
     choice.addEventListener("click", function() {
