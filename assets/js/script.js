@@ -31,8 +31,6 @@ function runGame(game) {
     let compImage = document.getElementById("computer-choice-img");
     
     if (game === "rock") {
-        
-
         if (compPlayed === "rock") {
             compImage.src = "assets/photos/rock.png";
             compImage.alt = "Image of rock hand symbol";
@@ -60,118 +58,110 @@ function runGame(game) {
         }
     }
     if (game === "scissors") {
-        playerImage.innerHTML.src = "assets/photos/scissors.png";
-        playerImage.innerHTML.alt="Image of scissors hand symbol";
         if (compPlayed === "scissors") {
             compImage.innerHTML.src = "assets/photos/scissors.png";
             compImage.innerHTML.alt="Image of scissors hand symbol";
-            alert("It's a Draw! Nobody Wins!");
+            setTimeout(alertMsg, 100, "It's a Draw! Nobody Wins!");
         } else if (compPlayed === "paper") {
             compImage.innerHTML.src = "assets/photos/paper.png";
             compImage.innerHTML.alt="Image of paper hand symbol";
-            alert("You won! Scissors cut Paper!");
+            setTimeout(alertMsg, 100, "You won! Scissors cut Paper!");
             playerWin();
         } else if (compPlayed === "lizard") {
             compImage.innerHTML.src = "assets/photos/lizard.png";
             compImage.innerHTML.alt="Image of lizard hand symbol";
-            alert("You won! Scissors decapitate Lizard!");
+            setTimeout(alertMsg, 100, "You won! Scissors decapitate Lizard!");
             playerWin();
         }else if (compPlayed === "rock") {
             compImage.innerHTML.src = "assets/photos/rock.png";
             compImage.innerHTML.alt = "Image of rock hand symbol";
-            alert("You lost! Rock crushes Scissors!");
+            setTimeout(alertMsg, 100, "You lost! Rock crushes Scissors!");
             compWin();
         }else if (compPlayed === "spock") {
             compImage.innerHTML.src = "assets/photos/spock.png";
             compImage.innerHTML.alt="Image of spock hand symbol";
-            alert("You lost! Spock smashes Scissors!");
+            setTimeout(alertMsg, 100, "You lost! Spock smashes Scissors!");
             compWin();
         }
     }
     if (game === "lizard") {
-        playerImage.innerHTML.src = "assets/photos/lizard.png";
-        playerImage.innerHTML.alt="Image of lizard hand symbol";
         if (compPlayed === "lizard") {
             compImage.innerHTML.src = "assets/photos/lizard.png";
             compImage.innerHTML.alt="Image of lizard hand symbol";
-            alert("It's a Draw! Nobody Wins!");
+            setTimeout(alertMsg, 100, "It's a Draw! Nobody Wins!");
         } else if (compPlayed === "paper") {
             compImage.innerHTML.src = "assets/photos/paper.png";
             compImage.innerHTML.alt="Image of paper hand symbol";
-            alert("You won! Lizard eats Paper!");
+            setTimeout(alertMsg, 100, "You won! Lizard eats Paper!");
             playerWin();
         } else if (compPlayed === "spock") {
             compImage.innerHTML.src = "assets/photos/spock.png";
             compImage.innerHTML.alt="Image of spock hand symbol";
-            alert("You won! Lizard poisons Spock!");
+            setTimeout(alertMsg, 100, "You won! Lizard poisons Spock!");
             playerWin();
         }else if (compPlayed === "rock") {
             compImage.innerHTML.src = "assets/photos/rock.png";
             compImage.innerHTML.alt = "Image of rock hand symbol";
-            alert("You lost! Rock crushes Lizard!");
+            setTimeout(alertMsg, 100, "You lost! Rock crushes Lizard!");
             compWin();
         }else if (compPlayed === "scissors") {
             compImage.innerHTML.src = "assets/photos/scissors.png";
             compImage.innerHTML.alt="Image of scissors hand symbol";
-            alert("You lost! Scissors decapitate Lizard!");
+            setTimeout(alertMsg, 100, "You lost! Scissors decapitate Lizard!");
             compWin();
         }
     }
     if (game === "paper") {
-        playerImage.innerHTML.src = "assets/photos/paper.png";
-        playerImage.innerHTML.alt="Image of paper hand symbol";
         if (compPlayed === "paper") {
             compImage.innerHTML.src = "assets/photos/paper.png";
             compImage.innerHTML.alt="Image of paper hand symbol";
-            alert("It's a Draw! Nobody Wins!");
+            setTimeout(alertMsg, 100, "It's a Draw! Nobody Wins!");
         } else if (compPlayed === "spock") {
             compImage.innerHTML.src = "assets/photos/spock.png";
             compImage.innerHTML.alt="Image of spock hand symbol";
-            alert("You won! Paper disproves Spock!");
+            setTimeout(alertMsg, 100, "You won! Paper disproves Spock!");
             playerWin();
         } else if (compPlayed === "rock") {
             compImage.innerHTML.src = "assets/photos/rock.png";
             compImage.innerHTML.alt = "Image of rock hand symbol";
-            alert("You won! Paper covers Rock!");
+            setTimeout(alertMsg, 100, "You won! Paper covers Rock!");
             playerWin();
         }else if (compPlayed === "scissors") {
             compImage.innerHTML.src = "assets/photos/scissors.png";
             compImage.innerHTML.alt="Image of scissors hand symbol";
-            alert("You lost! Scissors cut Paper!");
+            setTimeout(alertMsg, 100, "You lost! Scissors cut Paper!");
             compWin();
         }else if (compPlayed === "lizard") {
             compImage.innerHTML.src = "assets/photos/lizard.png";
             compImage.innerHTML.alt="Image of lizard hand symbol";
-            alert("You lost! Lizard eats Paper!");
+            setTimeout(alertMsg, 100, "You lost! Lizard eats Paper!");
             compWin();
         }
     }
     if (game === "spock") {
-        playerImage.innerHTML.src = "assets/photos/spock.png";
-        playerImage.innerHTML.alt="Image of spock hand symbol";
         if (compPlayed === "spock") {
             compImage.innerHTML.src = "assets/photos/spock.png";
             compImage.innerHTML.alt="Image of spock hand symbol";
-            alert("It's a Draw! Nobody Wins!");
+            setTimeout(alertMsg, 100, "It's a Draw! Nobody Wins!");
         } else if (compPlayed === "rock") {
             compImage.innerHTML.src = "assets/photos/rock.png";
             compImage.innerHTML.alt = "Image of rock hand symbol";
-            alert("You won! Spock vaporizes Rock!");
+            setTimeout(alertMsg, 100, "You won! Spock vaporizes Rock!");
             playerWin();
         } else if (compPlayed === "scissors") {
             compImage.innerHTML.src = "assets/photos/scissors.png";
             compImage.innerHTML.alt="Image of scissors hand symbol";
-            alert("You won! Spock smashes Scissors!");
+            setTimeout(alertMsg, 100, "You won! Spock smashes Scissors!");
             playerWin();
         }else if (compPlayed === "lizard") {
             compImage.innerHTML.src = "assets/photos/lizard.png";
             compImage.innerHTML.alt="Image of lizard hand symbol";
-            alert("You lost! Lizard poisons Spock!");
+            setTimeout(alertMsg, 100, "You lost! Lizard poisons Spock!");
             compWin();
         }else if (compPlayed === "paper") {
             compImage.innerHTML.src = "assets/photos/paper.png";
             compImage.innerHTML.alt="Image of paper hand symbol";
-            alert("You lost! Paper disproves Spock!");
+            setTimeout(alertMsg, 100, "You lost! Paper disproves Spock!");
             compWin();
         }
     }
