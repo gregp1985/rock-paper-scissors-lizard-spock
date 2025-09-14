@@ -1,4 +1,5 @@
-// let gameHeading = document.getElementById("game-heading");
+
+// gameHeading.innerText = "Best of Three";
 // let games = document.getElementsByClassName("game-btn");
 // for (let game of games) {
 //     game.addEventListener("click", function() {
@@ -182,11 +183,44 @@ function updatePlayerImage(game) {
     playerImage.alt = `Image of ${game} hand symbol`;
 }
 function alertMsg(resultMsg) {
-    alert(resultMsg)
+    document.getElementById("result-message").innerText = resultMsg
 }
-function playerWin(statement) {
-    // alert(`You Won! ${statement}`)
+function playerWin() {
+    let oldScore = parseInt(document.getElementById("wins").innerText);
+    document.getElementById("wins").innerText = ++oldScore;
+    let gameHeading = document.getElementById("game-heading").innerText;
+    if (gameHeading === "Best of Three" && oldScore == "2") {
+        setTimeout(playerWinBestOf, 50, "You Won Best of Three!")
+    } else if (gameHeading === "Best of Five" && oldScore == "3") {
+        setTimeout(playerWinBestOf, 50, "You Won Best of Five!")
+    }
 }
-function compWin(alert) {
+function compWin() {
+    let oldScore = parseInt(document.getElementById("losses").innerText);
+    document.getElementById("losses").innerText = ++oldScore;
+    let gameHeading = document.getElementById("game-heading").innerText;
+    if (gameHeading === "Best of Three" && oldScore == "2") {
+        setTimeout(playerLoseBestOf, 50, "You Lost Best of Three!")
+    } else if (gameHeading === "Best of Five" && oldScore == "3") {
+        setTimeout(playerLoseBestOf, 50, "You Lost Best of Five!")
+    }
+}
+function playerWinBestOf(winMsg) {
+    alert(winMsg);
+    location.reload();
+}
+function playerLoseBestOf(loseMsg) {
+    alert(loseMsg);
+    location.reload();
+}
 
-}
+// function incrementScore() {
+//     let oldScore = parseInt(document.getElementById("score").innerText);
+//     document.getElementById("score").innerText = ++oldScore;
+
+// }
+// function incrementWrongAnswer() {
+//     let oldScore = parseInt(document.getElementById("incorrect").innerText);
+//     document.getElementById("incorrect").innerText = ++oldScore;
+
+// }

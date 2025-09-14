@@ -71,6 +71,8 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-evenly;
+    max-width: 1000px;
+    margin: auto;
 }
 #player-choice {
     max-width: 45%;
