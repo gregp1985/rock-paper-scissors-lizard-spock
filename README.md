@@ -117,12 +117,22 @@ All Elements Shrink and grow to fit with no cropping, up to maximum widths and l
 
 ### Validator Testing 
 
-- HTML (All Pages)
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+- HTML
+  - Home Page
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgregp1985.github.io%2Frock-paper-scissors-lizard-spock%2Findex.html)
+  - Rules Page
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgregp1985.github.io%2Frock-paper-scissors-lizard-spock%2Frules.html)
+  - Best of 3
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgregp1985.github.io%2Frock-paper-scissors-lizard-spock%2Fgame-best-of-three.html)
+  - Best of 5
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgregp1985.github.io%2Frock-paper-scissors-lizard-spock%2Fgame-best-of-five.html)
+  - Continuous Play
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgregp1985.github.io%2Frock-paper-scissors-lizard-spock%2Fgame-continuous.html)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgregp1985.github.io%2Frock-paper-scissors-lizard-spock%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JavaScript
-  - 
+  - No Errors, 18 warnings when passed through [JSHint](https://jshint.com)
+  ![JSHint Results](assets/readme/screenshots/jshint.png)
 - Colour Contrast
   - Rated as 15.3:1 Contrast ratio using [Adobe Colour Contrast Analyser](https://color.adobe.com/create/color-contrast-analyzer)
 - Lighthouse
