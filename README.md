@@ -115,6 +115,7 @@ Images, videos and text all automatically adjust depending on screen size.
 
 All Elements Shrink and grow to fit with no cropping, up to maximum widths and look good on all screen sizes.
 
+
 ### Validator Testing 
 
 - HTML
