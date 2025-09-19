@@ -1,10 +1,10 @@
 # Rock, Paper, Scissors, Lizard, Spock ... Further Testing
 
-Below is dosumentation on further testing carried out on the Rock, Paper, Scissors, Lizard, Spock Game Website
+Below is documentation on further testing carried out on the Rock, Paper, Scissors, Lizard, Spock game website.
 
 ## Screens
 
-I used my iPhone 15 to carry out tests on all pages as well as Google Inspect. Everything resized appropriately and looked good on all screen sizes. See below.
+I used my iPhone 15, 13" MacBook and 1400px large screen to carry out tests on all pages. I also used Google Inspect for other screen sizes. Everything resized appropriately and looked good on all screen sizes. See below.
 
 ### iPhone 15
 
@@ -30,7 +30,7 @@ I used my iPhone 15 to carry out tests on all pages as well as Google Inspect. E
 
 ## Results
 
-Using Continuous Play I played through every variation to confirm output results were correct across the board including all draws and that scores incremented correctly and did not increment on draws. Also the more I played the more the scores remained fairly level, indicating my random function to generate a choice by the computer was working as desired.
+Using Continuous Play I played through every variation to confirm output results were correct across the board, including all draws, and that scores incremented correctly and did not increment on draws. Also the more I played the more the scores remained fairly level, indicating my random function to generate a choice by the computer was working as desired.
 
 ### User plays Rock
 
